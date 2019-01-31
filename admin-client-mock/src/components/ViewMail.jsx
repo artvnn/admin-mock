@@ -24,6 +24,12 @@ const styles = theme => ({
 const renderDateTime = dateTime =>
   `${dateTime.toDateString()} ${dateTime.toTimeString()}`;
 
+const renderBody = body =>
+  body
+    .split("\n")
+    .map(para => `<p>${para}</p>`)
+    .join("");
+
 class ViewMail extends React.Component {
   render() {
     const {classes} = this.props;
@@ -56,7 +62,7 @@ class ViewMail extends React.Component {
         <Typography color="primary" variant="h6">
           Subject: {mail.subject}
         </Typography>
-        <p>{mail.body}</p>
+        <p dangerouslySetInnerHTML={{__html: renderBody(mail.body)}} />
         <br />
         <Button
           variant="outlined"
