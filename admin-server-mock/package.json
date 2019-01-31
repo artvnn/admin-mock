@@ -1,0 +1,19 @@
+{
+  "name": "admin-server-mock",
+  "version": "1.0.0",
+  "description": "Admin API Server Mock",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manoj Kumar A",
+  "license": "ISC"
+}
