@@ -1,7 +1,7 @@
 import React, {Fragment} from "react";
 import ViewMail from "./ViewMail";
-import {mailWasViewed} from "../services/mail";
-import {loadMailbox, deleteMails} from "../services/mail";
+import {mailWasViewed} from "../../../services/mail";
+import {loadMailbox, deleteMails} from "../../../services/mail";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";

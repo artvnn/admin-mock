@@ -1,15 +1,17 @@
-const authState = {
-  LOGGING_IN: 0,
-  AUTHENTICATED: 1,
-  NOT_AUTHENTICATED: 2,
-  ERROR: 3,
-};
-const authActionType = {
-  LOGIN_TRY: 0,
-  LOGIN_OK: 1,
-  LOGOUT_ERROR: 2,
-  LOGOUT: 3,
-};
+import {convertToHashmap} from "../../common/utils";
+
+const authState = convertToHashmap([
+  "LOGGING_IN",
+  "AUTHENTICATED",
+  "NOT_AUTHENTICATED",
+  "ERROR",
+]);
+const authActionType = convertToHashmap([
+  "LOGIN_TRY",
+  "LOGIN_OK",
+  "LOGOUT_ERROR",
+  "LOGOUT",
+]);
 const defaultUser = {
   id: "",
   name: "",

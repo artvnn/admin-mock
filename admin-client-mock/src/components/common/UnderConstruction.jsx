@@ -1,5 +1,5 @@
 import React from "react";
-import underConstructionImage from "../404.png";
+import underConstructionImage from "../../assets/img/404.png";
 import Typography from "@material-ui/core/Typography";
 import {withStyles} from "@material-ui/core/styles";
 import teal from "@material-ui/core/colors/teal";

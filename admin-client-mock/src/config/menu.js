@@ -1,7 +1,7 @@
 import React from "react";
-import Inbox from "./components/Inbox";
-import ComposeMail from "./components/ComposeMail";
-import SentMails from "./components/SentMails";
+import Inbox from "../components/dashboard/mail/Inbox";
+import ComposeMail from "../components/dashboard/mail/ComposeMail";
+import SentMails from "../components/dashboard/mail/SentMails";
 
 export default {
   name: "ROOT",

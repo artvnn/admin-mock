@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import logo from "../Admino.png";
+import logo from "../../assets/img/Admino.png";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import teal from "@material-ui/core/colors/teal";

@@ -1,8 +1,8 @@
 import React from "react";
 import {connect} from "react-redux";
-import {authState} from "../services/reducers/auth";
-import {login} from "../services/server";
-import MainLayout from "./MainLayout";
+import {authState} from "../../services/reducers/auth";
+import {login} from "../../services/server";
+import MainLayout from "./Layout";
 
 import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core/styles";

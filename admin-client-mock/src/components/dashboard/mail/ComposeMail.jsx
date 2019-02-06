@@ -1,9 +1,9 @@
 import React, {Fragment} from "react";
 import Select from "react-select";
 import {connect} from "react-redux";
-import {sendMail, validateMail} from "../services/mail";
+import {sendMail, validateMail} from "../../../services/mail";
 import {Redirect} from "react-router-dom";
-import Errors from "./Errors";
+import Errors from "../../common/Errors";
 import Inbox from "./Inbox";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";

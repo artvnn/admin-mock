@@ -1,17 +1,17 @@
 import React, {Fragment, Component} from "react";
 import {Route, withRouter} from "react-router-dom";
-import Login from "./components/Login.jsx";
-import Dashboard from "./components/Dashboard.jsx";
-import UnderConstruction from "./components/UnderConstruction.jsx";
-import WaitingForLogin from "./components/WaitingForLogin";
-import LoginError from "./components/LoginError";
+import Login from "./components/auth/Login.jsx";
+import Dashboard from "./components/dashboard/Dashboard";
+import UnderConstruction from "./components/common/UnderConstruction.jsx";
+import WaitingForLogin from "./components/auth/WaitingForLogin";
+import LoginError from "./components/auth/LoginError";
 import {connect} from "react-redux";
 import {authState} from "./services";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import {MuiThemeProvider, createMuiTheme} from "@material-ui/core/styles";
 import teal from "@material-ui/core/colors/teal";
 import amber from "@material-ui/core/colors/amber";
-import menu from "./menu";
+import menu from "./config/menu";
 
 const theme = createMuiTheme({
   palette: {

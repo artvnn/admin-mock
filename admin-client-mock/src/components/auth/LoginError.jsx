@@ -1,6 +1,6 @@
 import React from "react";
 import Login from "./Login";
-import Errors from "./Errors";
+import Errors from "../common/Errors";
 
 function LoginError() {
   return (

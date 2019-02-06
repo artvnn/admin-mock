@@ -1,9 +1,9 @@
 import React, {Fragment} from "react";
 import {Link} from "react-router-dom";
 import {connect} from "react-redux";
-import {logout} from "../services/server";
-import logo from "../Admino.png";
-import personImage from "../person.png";
+import {logout} from "../../services/server";
+import logo from "../../assets/img/Admino.png";
+import personImage from "../../assets/img/person.png";
 
 import PropTypes from "prop-types";
 import classNames from "classnames";
@@ -27,7 +27,7 @@ import Button from "@material-ui/core/Button";
 import Badge from "@material-ui/core/Badge";
 import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
-import menu from "../menu";
+import menu from "../../config/menu";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import Collapse from "@material-ui/core/Collapse";
 

@@ -1,14 +1,8 @@
-const mailState = {
-  LOADING: 0,
-  LOADED: 1,
-  ERROR: 2,
-};
+import {convertToHashmap} from "../../common/utils";
 
-const mailActionType = {
-  LOAD: 10,
-  LOAD_ERROR: 11,
-  VIEWED: 12,
-};
+const mailState = convertToHashmap(["LOADING", "LOADED", "ERROR"]);
+
+const mailActionType = convertToHashmap(["LOAD", "LOAD_ERROR", "VIEWED"]);
 
 const calculateUnRead = list =>
   list.reduce((total, current) => (current.isViewed ? total : total + 1), 0);
